@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>tente abrir esse site em varios dispositivos diferentes</p>
+    <picture>
+        <source media="(max-width:700px)" srcset="IMAGENS/img-P-300x300.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="IMAGENS/img-M-700x700.png" type="image/png">
+        <img src="IMAGENS/img-G-1000x1000.png" alt="Imagem Flexivel">
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>vamos aprender a reproduzir áudios</p>
+    <audio src="midia/pq-nao-trabaia-toma-sua-gu.mp3" autoplay controls></audio>
+    <audio preload="metadata" controls loop>
+        <source src="midia/pq-nao-trabaia-toma-sua-gu.mp3" type="audio/mpeg">
+        <source src="midia/pq-nao-trabaia-toma-sua-gu.ogg" type="audio/mogg">
+        <source src="midia/pq-nao-trabaia-toma-sua-gu.wav" type="audio/mwav">
+        <p>Infelizmente seu navegador não consegue reproduzir o áudio <a href="midia/pq-nao-trabaia-toma-sua-gu.mp3">Clique aqui</a> para baixar o arquivo MPR</p>
+    </audio>
+</body>
+</html>

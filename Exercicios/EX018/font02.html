@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'Mogilte';
+            src: url('fontes/Mogilte.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+            /* 
+                 Tipos de format()
+                 - opentype (otf)
+                 - truetype (ttf)
+                 - embedded-opentype
+                 - truetype-aat (Apple Advanced Typography)
+                 - svg
+            */
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            font-family: 'Mogilte', 'Times New Roman', Times, serif;
+            font-size: 3em;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello, Wolrd!</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum minima sapiente at doloremque aut distinctio, repudiandae ab quaerat, nostrum voluptate commodi, eos tempore veniam consequuntur earum laboriosam. Distinctio, officiis obcaecati.</p>
+</body>
+</html>

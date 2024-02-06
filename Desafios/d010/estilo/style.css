@@ -1,0 +1,228 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'Beaufort';
+    src: url('../fonts/BeaufortforLOL-Bold.otf') format('opentype');
+    font-family: 'Beaufort2';
+    src: url('../fonts/BeaufortforLOL-Regular.otf') format('opentype');
+    font-family: 'Beaufort3';
+    src: url('../fonts/BeaufortforLOL-Medium.otf') format('opentype');
+    font-weight: normal;
+}
+
+/* Variaveis */
+
+:root{
+    --cor0: #0D1720;
+    --cor1: #024059;
+    --cor2: #037F8C;
+    --cor3: #04BFBF;
+    --cor4: #BF9E60;
+    --cor5: #C8A963;
+    --cor6: #95916B;
+    --cor7: #01283F;
+
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --font-destaque: 'Bebas Neue', Arial;
+    --fonte-lol: 'Beaufort', Arial;
+    --fonte-lol2: 'Beaufort2', Arial;
+    --fonte-lol3: 'Beaufort3' Arial;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body{
+    background-color: var(--cor7);
+    color: #C8A963;
+    font-family: var(--fonte-lol2);
+}
+
+header{
+    background-image: linear-gradient(to top, #024059, #037F8C);
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header > h1{
+    font-family: var(--fonte-lol);
+    margin-bottom: 20px;
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.411);
+}
+
+header > p{
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    color:white;
+    max-width: 600px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.411);
+}
+
+nav{
+    background-color: var(--cor1);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.205);
+}
+
+nav > a{
+    color: white;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover{
+    background-color: var(--cor0);
+    color: #04BFBF;
+}
+
+main{
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: var(--cor0);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.466);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main h1{
+    font-family: var(--fonte-lol);
+    color: var(--cor2);
+    font-size: 2em;
+}
+
+div#video{
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 50%;
+    position: relative;
+}
+
+div#video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+#titulo{
+    padding-top: 20px;
+}
+
+.subtitulo{
+    background-image: linear-gradient(to right, #024059 , transparent);
+    font-size: 2em;
+    color:var(--cor5);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+article > li{
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #BF9E60;
+}
+
+#biografia:hover{
+    background-color: rgba(0, 0, 0, 0.582);
+}
+
+#biografia{
+    color: var(--cor2);
+    font-weight: bold;
+    padding: 10px;
+    width: auto;
+    font-size: 1.5em;
+    transition-duration: 0.5s;
+}
+
+main h2{
+    font-family: var(--fonte-lol3);
+    color: #d1ad6a;
+    font-size: 1.3em;
+    
+}
+
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 1.7em;
+}
+
+main strong{
+    color: #04BFBF;
+    font-weight: bold;
+}
+
+main a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #04BFBF;
+    background-color: #03f0f023;
+    padding: 2px 6px;
+}
+
+main a:hover{
+    text-decoration: underline;
+    color: #037F8C;
+}
+
+aside{
+    font-weight: bold;
+    background-color: #024059;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow:  3px 3px 8px rgba(0, 0, 0, 0.295);
+}
+
+aside > ul{
+    list-style-type: '\1F50E\00A0\00A0';
+    list-style-position: inside;
+    columns: 4;
+}
+
+aside > h3{
+    background-color: #037F8C;
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+footer{
+    background-color: var(--cor0);
+    color: white;
+    text-align: center;
+    font-size: 0.8;
+    padding: 5px;
+}
+
+img{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+}

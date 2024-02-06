@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo videos hospedado localmente</h1>
+    <p>Esté video está hospedado no meu proprio servidor</p>
+    <video width="600" poster="imagens/pexels-josh-sorenson-1586131.jpg" controls autoplay loop>
+        <source src="midia/meu-video-MP4.mp4" type="video/mp4">
+        <source src="midia/Meu-Video-M4V.m4v" type="video/mp4">
+        <p>Seu navegador não tem compatibilidade com reprodução de videos</p> 
+    </video>
+
+    <!-- Sempre adicionar os sources em ordem, pois ele vai tentar carregar por exemplo o MP4 se o navegador não for compativel então irá para o proximo que é MV4 e assim por diante -->
+
+    <h1>Inserindo videos do YouTube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg?si=dorNyU_jyu0dihmT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+    <!-- Fazendo assim voçê consome os dados do Servidor onde está o video (YouTube) e não do seu Servidor-->
+</body>
+</html>
