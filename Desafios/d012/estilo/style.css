@@ -28,16 +28,23 @@ header{
 }
 
 header > h1 {
-    font-family: var(--fonte3);
+    font-family: var(--fonte2);
     padding-top: 50px;
     /*Para deixar tudo maiusculo (text-transform: uppercase;)*/
-    font-variant: small-caps; /*Deixa tudo maiusculo porem as primeiras letras são maiores*/
-    font-size: 10vw;
+    /*font-variant: small-caps; Deixa tudo maiusculo porem as primeiras letras são maiores*/
+    text-transform: uppercase;
+    font-size: 7vw;
     
+}
+
+header > h2{
+    font-family: var(--fonte2);
+    font-variant: small-caps;
 }
 
 header > p{
     padding-bottom: 50px;
+    font-size: 1em;
 }
 
 a{
@@ -59,6 +66,12 @@ section{
     font-size: 4vw;
 }
 
+section > p{
+    padding-bottom: 2em;
+    font-family: var(--fonte2);
+    font-variant: small-caps;
+}
+
 section.normal{
     background-color: white;
     color: black;
@@ -67,12 +80,28 @@ section.normal{
 section.imagem{
     background-color: rgb(36, 36, 36);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.imagem > p{
     display: inline-block;
     padding: 5px;
     background-color: rgba(0, 0, 0, 0.404);
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01{
+    background-image: url(../imagens/img03.jpg);
+    background-position: right center;
+
+}
+
+section#img02{
+    background-image: url(../imagens/img04.jpg);
+    background-position: center center;
+ 
 }
 
 footer{
