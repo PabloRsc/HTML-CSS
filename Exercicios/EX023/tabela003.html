@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 600px;
+            border-collapse: collapse;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        th,td{
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        thead,tfoot{
+            background-color: rgb(75, 75, 75);
+            color: white;
+        }
+
+        .num{
+            text-align: center;
+            background-color: yellow;
+        }
+
+        .champ{
+            background-color: lightslategray;
+        }
+
+        .class{
+            background-color: lightgray;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+           CAPTION
+           THEADE
+                TR, TD, TH
+           TBODY
+                TR, TD, TH
+           TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <caption>Lista de Campeões de League of Legends</caption>
+        <thead>
+            <tr>
+                <th scope="col">Campeão</th>
+                <th scope="col">Classes</th>
+                <th scope="col" style="width: 50px;">Data de Lançamento</th> <!-- Uso da tag scope: usando o col ja que o conteudo do th esta na  coluna abaixo-->
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="champ">Aatrox</td>
+                <td class="class">Colosso</td>
+                <td class="num">13-06-2013</td>
+            </tr>
+            <tr>
+                <td class="champ">Ahri</td>
+                <td class="class">Obliterador</td>
+                <td class="num">14-12-2014</td>                
+            </tr>
+            <tr>
+                <td class="champ">Akali</td>
+                <td class="class">Assasino</td>
+                <td class="num">11-05-2010</td>                
+            </tr>
+            <tr>
+                <td class="champ">Akshan</td>
+                <td class="class">Atirador/Assasino</td>
+                <td class="num">22-07-2021</td>
+            </tr>
+            <tr>
+                <td class="champ">Alistar</td>
+                <td class="class">Vanguarda</td>
+                <td class="num">-21-02-2009</td>
+            </tr>
+            <tr>
+                <td class="champ">Amumu</td>
+                <td class="class">Vanguarda</td>
+                <td class="num">26-06-2009</td>
+            </tr>
+            <tr>
+                <td class="champ">Anivia</td>
+                <td class="class">Mago</td>
+                <td class="num">19-07-2009</td>
+            </tr>
+            <tr>
+                <td class="champ">Annie</td>
+                <td class="class">Obliterador</td>
+                <td class="num">21-02-2009</td>
+            </tr>
+            <tr>
+                <td class="champ">Aphelios</td>
+                <td class="class">Atirador</td>
+                <td class="num">12-11-2019</td>
+            </tr>
+            <tr>
+                <td class="champ">Ashe</td>
+                <td class="class">Atirador</td>
+                <td class="num">21-02-2009</td>
+            </tr>
+            <tr>
+                <td class="champ">Aurelion Sol</td>
+                <td class="class">Mago</td>
+                <td class="num">24-03-2016</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Campeões</th> <!-- Uso da tag scope: usando o row ja que o conteudo do th esta na mesma linha-->
+                <td style="text-align: center;"><strong>11</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
