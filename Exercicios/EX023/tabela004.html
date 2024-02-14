@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabelas Grandes</title>
+    <title>Tabela Zebrada</title>
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
@@ -11,6 +11,7 @@
         table{
             width: 600px;
             border-collapse: collapse;
+            position: relative; /*Cabeçalho fixo*/
         }
 
         caption{
@@ -29,17 +30,18 @@
             color: white;
         }
 
+        thead > tr > th{ /*Cabeçalho fixo*/
+            position: sticky;
+            top: -1px;
+            background-color: rgb(75, 75, 75);
+        }
+
+        tbody > tr:nth-child(odd){ /*Efeito Zebrado (odd=impar - even=par)*/
+            background-color: lightgray;
+        }
+
         .num{
             text-align: center;
-            background-color: yellow;
-        }
-
-        .champ{
-            background-color: lightslategray;
-        }
-
-        .class{
-            background-color: lightgray;
         }
 
     </style>
@@ -122,10 +124,60 @@
                 <td class="class">Mago</td>
                 <td class="num">24-03-2016</td>
             </tr>
+            <tr>
+                <td>Azir</td>
+                <td>Especialista</td>
+                <td class="num"> 16-09-2014</td>
+            </tr>
+            <tr>
+                <td>Bardo</td>
+                <td>Disruptor</td>
+                <td class="num">12-03-2015</td>
+            </tr>
+            <tr>
+                <td>Bel'Veth</td>
+                <td>Duelista</td>
+                <td class="num">09-06-2022</td>
+            </tr>
+            <tr>
+                <td>Blitzcrank</td>
+                <td>Disruptor</td>
+                <td class="num">02-09-2009</td>
+            </tr>
+            <tr>
+                <td>Brand</td>
+                <td>Obliterador</td>
+                <td class="num">12-04-2011</td>
+            </tr>
+            <tr>
+                <td>Braum</td>
+                <td>Protetor</td>
+                <td class="num">12-05-2014</td>
+            </tr>
+            <tr>
+                <td>Briar</td>
+                <td>Lutador de Investida</td>
+                <td class="num">14-09-2023</td>
+            </tr>
+            <tr>
+                <td>Caitlyn</td>
+                <td>Atirador</td>
+                <td class="num">04-01-2011</td>
+            </tr>
+            <tr>
+                <td>Camille</td>
+                <td>Lutador de Investida</td>
+                <td class="num">07-12-2016</td>
+            </tr>
+            <tr>
+                <td>Cassiopeia</td>
+                <td>Mago</td>
+                <td class="num">14-12-2010</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th scope="row" colspan="2">Total de Campeões</th> <!-- Uso da tag scope: usando o row ja que o conteudo do th esta na mesma linha-->
+                <th scope="row">Total de Campeões</th> <!-- Uso da tag scope: usando o row ja que o conteudo do th esta na mesma linha-->
                 <td style="text-align: center;"><strong>11</strong></td>
             </tr>
         </tfoot>
