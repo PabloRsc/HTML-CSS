@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+/*Typical device breakpoints
+
+pequenas telas: até 600px
+Celular: 600px > 768px
+Tablet:  768px > 992px
+Desktop: 992px > 1200px
+Tv: > 1400px
+
+$grid-breakpoints: (
+(X-Small)           - xs: 0, 
+(Small)             - sm: 576px,
+(Medium)            - md: 768px,
+(Large)             - lg: 992px,
+(Extra large)       - xl: 1200px,
+(Extra extra large) - xxl: 1400px
+);
+
+*/
+
+@media screen and (min-width: 768px){
+    #home{
+        display: none;
+    }
+
+    menu{
+        display: block;
+    }
+
+    menu > ul > li{
+        display: inline-block;
+    }
+
+    main{
+        width: 768px;
+    }
+}
